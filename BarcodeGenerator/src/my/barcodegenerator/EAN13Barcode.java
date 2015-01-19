@@ -47,7 +47,7 @@ class EAN13Barcode implements Barcode{
 		Log.i(EAN13,"The length of the code "+code.length);
 	}
 	
-	private int controlDigit(int[] digits){
+	public int controlDigit(int[] digits){
 		int even=0,odd=0;
 		for(int i=0;i<EAN13_LENGTH/2;i++){
 			even+=digits[2*i];
